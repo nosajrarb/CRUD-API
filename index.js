@@ -2,6 +2,7 @@ import express from 'express'
 
 //routes
 import userRoutes from './routes/users.js'
+import commentRoutes from './routes/comments.js'
 
 const app = express();
 const PORT = 2121;
@@ -14,5 +15,6 @@ app.get('/', (req, res) => {
 })
 
 app.use('/users', userRoutes)
+app.use('/comments', commentRoutes)
 
 app.listen(PORT, () => {console.log('Server: ✅')})

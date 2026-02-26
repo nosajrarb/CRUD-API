@@ -3,5 +3,13 @@ POST http://localhost:2121/users
 Content-Type: application/json
 
 {
-    "name": "John Doe"
+    "name": "Hunter biden"
+}
+
+###post comment
+POST http://localhost:2121/comments
+Content-Type: application/json
+
+{
+    "content": "Cogito Ergo Sum"
 }

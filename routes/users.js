@@ -14,7 +14,7 @@ router.get('/', (req, res) => {
 router.post('/', (req, res) => {
     const user = req.body;
     users.push({...user, id: uuidv4()})
-    res.send(`${user} : ✅`)
+    console.log(`${JSON.stringify(user)} : ✅`)
 })
 
 export default router;
