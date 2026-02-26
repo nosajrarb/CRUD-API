@@ -1,0 +1,7 @@
+###post user
+POST http://localhost:2121/users
+Content-Type: application/json
+
+{
+    "name": "John Doe"
+}
